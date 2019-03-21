@@ -20,5 +20,16 @@ class Deck
     end
   end
 
+  def shuffle
+    self.cards.shuffle
+  end
+
+  def remove_card
+    self.cards.pop
+  end
+
+  def add_card(card)
+    self.cards << card
+  end
 
 end

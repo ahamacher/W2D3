@@ -15,8 +15,12 @@ RSpec.describe Deck do
     end
   end
 
-  descibe "remove card" do
-    
+  describe "#remove_card" do
+
+    it "removes a card from the deck" do
+      deck.remove_card
+      excpect(deck.cards.length).to eq(51)
+    end
 
 
 
